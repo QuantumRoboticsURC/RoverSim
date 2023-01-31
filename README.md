@@ -11,6 +11,8 @@ To use the puzzlebot simulation run:
 ` roslaunch puzzlebot_gazebo puzzlebot_gazebo.launch `
 
 before running this roslaunch please ensure:
+- all the packages within this repo are located at the src/<package_name> 
+level of your workspace
 - you have built all the ros packeges contained in this repo
 - you have installed the following:
     - sudo apt-get install ros-melodic-joint-state-publisher
