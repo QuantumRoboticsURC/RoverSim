@@ -18,6 +18,6 @@ level of your workspace
     - sudo apt-get install ros-melodic-joint-state-publisher
     - sudo apt-get install ros-melodic-controller-manager
     - sudo apt-get install ros-melodic-gazebo-ros-control
-    - sudo apt-get install ros-melodic-joint-state-contoller
+    - sudo apt-get install ros-melodic-joint-state-controller
     - sudo apt-get install ros-melodic-effort-controllers
     - sudo apt-get install ros-melodic-position-controllers
