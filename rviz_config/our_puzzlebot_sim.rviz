@@ -70,20 +70,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        left_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         map:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        right_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -104,6 +94,14 @@ Visualization Manager:
         {}
       Update Interval: 0
       Value: false
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: visualization_marker
+      Name: Marker
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -132,25 +130,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.4024658203125
+      Distance: 5.9484171867370605
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.5314158797264099
-        Y: 0.974032998085022
-        Z: -0.1956794410943985
+        X: 0.8426817059516907
+        Y: -0.19732213020324707
+        Z: 0.2954968512058258
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.36539825797080994
+      Pitch: 0.7453979253768921
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.4154004454612732
+      Yaw: 0.45540040731430054
     Saved: ~
 Window Geometry:
   Displays:
@@ -169,4 +167,4 @@ Window Geometry:
     collapsed: false
   Width: 1469
   X: 67
-  Y: 27
+  Y: 162
