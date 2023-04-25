@@ -1,0 +1,14 @@
+
+<launch>        
+
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find puzzlebot_sim)/urdf/puzzlebot.xacro'" />
+
+    <!--node name="joint_state_publisher" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui"></node>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/-->
+
+    <node name="differential_drive_model" pkg="puzzlebot_sim" type="differentialDriveModel.py" output="screen"/>
+    <node name="solver" pkg="puzzlebot_sim" type="solver.py" output="screen"/>    
+    <node name="coordinate_transform" pkg="puzzlebot_sim" type="coordinateTransform.py" output="screen"/>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find puzzlebot_sim)/rviz_config/our_puzzlebot_sim.rviz"/>
+</launch>
