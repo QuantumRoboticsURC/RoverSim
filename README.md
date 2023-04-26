@@ -9,6 +9,7 @@ as computationaly cheap simulation of the Q-Mars. For this we plan to map the po
 To use the puzzlebot simulation:
 - clone this repository in the src folder of your ros workspace
 - rename the folder called 'RoverSim' to 'puzzlebot_sim'
+- do catkin_make
 - run:
 ` roslaunch puzzlebot_sim our_puzlebot_sim.launch `
 - if your are using this simulation to test algorithms within the [autonomous nav package](https://github.com/QuantumRoboticsURC/qr_navigation) the node that will generate the gps and imu equivalents is the [OdomPublisherPuzzlebotSim.py](https://github.com/QuantumRoboticsURC/qr_navigation/blob/main/scripts/OdomPublisherPuzzlebotSim2.py) node  
