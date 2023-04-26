@@ -3,7 +3,7 @@
 import rospy
 from geometry_msgs.msg import Twist, Pose2D
 from std_msgs.msg import Float32
-from mini_challenge_1.srv import *
+from puzzlebot_sim.srv import *
 
 class Solver:
     
