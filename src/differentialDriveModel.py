@@ -22,7 +22,7 @@ class DifferentialDriveModel:
 
     def twist_callback(self, msg):
         self.twist_linear_x = msg.linear.x
-        self.twist_angular_z = msg.angular.z        
+        self.twist_angular_z = -msg.angular.z        
 
     def main(self):
         while not rospy.is_shutdown():
